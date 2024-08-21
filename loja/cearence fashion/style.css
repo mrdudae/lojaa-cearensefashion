@@ -14,6 +14,27 @@
   li {
     list-style: none;
   }
+  /* topo-header */
+  
+  .hero-header__container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 30rem;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(imagens/prainha.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hero-header__content {
+    padding: 186px 0 186px 100px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 0 0 auto;
+  }
   #finalizar {
     margin: 0;
     position: absolute;
@@ -151,6 +172,7 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* adicionar ao carrinho */
 .menu__cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 900px));
@@ -187,76 +209,6 @@
   max-width: 900px;
   padding: 40px 5%;
 }
-.card:nth-child(1) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr1.jpeg');
-  background-position: center;
-  background-size: cover;
-}
-.card:nth-child(2) {
-  background-image: linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr2.jpeg');
-}
-.card:nth-child(3) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr3.jpeg');
-  background-position: center;
-}
-.card:nth-child(4) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr4.jpeg');
-}
-
-.card2:nth-child(1) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho1.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.card2:nth-child(2) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho2.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.card2:nth-child(3) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho3.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.card2:nth-child(4) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho4.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.card3:nth-child(1) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby1.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.card3:nth-child(2) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby2.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.card3:nth-child(3) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby3.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.card3:nth-child(4) {
-  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby4.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.card__title {
-  color: #67b0b4;
-  font-size: 45px;
-  line-height: 50px;
-  width: fit-content;
-}
-.card__title,
-.card__price {
-  margin-left: auto;
-  margin-right: 2rem;
-}
 .button--primary {
   color: rgb(255, 255, 255);
   float: right;
@@ -275,151 +227,24 @@
   background-color: #317477;
   transition: all 200ms;
 }
-.cart {
+.drinks__container {
+  display: flex;
   width: 100%;
+  position: relative;
 }
 
-.section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer {
-  background-color: black;
-}
 
-.footer .section__title,
-.footer .section__subtitle {
-  color: white;
-  text-align: left;
-}
-
-.footer .section__title span {
-  color: #67b0b4;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: calc(100% - 40px);
-  max-width: 1460px;
-  margin: 0 auto;
-  gap: 32px;
-  padding: 32px 0;
-}
-
-.footer .button--primary {
-  padding: 16px 36px;
-  text-transform: uppercase;
-}
-
-.button {
-  width: fit-content;
-  border: 0;
-}
-
-.hero-header__container {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  height: 30rem;
-  background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(imagens/prainha.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-
-.hero-header__content {
-  padding: 186px 0 186px 100px;
-  width: 100%;
-  max-width: 1100px;
+.drinks__items{
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  flex: 0 0 auto;
 }
 
-/*media queries*/ 
-@media (max-width: 1535px) {
-  .hero-header img {
-    margin-left: 0;
-  }
-
-  .hero-header__content {
-    flex: initial;
-    padding: 40px;
-  }
+.drinks__items > p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
-@media (max-width: 1279px) {
-  .hero-header img {
-    margin-top: 0;
-  }
-
-  .hero-header__container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1023px) {
-  .hero-header h1 {
-    font-size: 40px;
-    line-height: 36px;
-  }
-
-  .section__title,
-  .section__subtitle,
-  .card {
-    max-width: 450px;
-  }
-
-  .menu {
-    padding: 20px 24px 48px 24px;
-    gap: 24px;
-  }
-
-  .menu__cards {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    justify-items: center;
-  }
-
-  .section__title {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .section__subtitle {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .card {
-    padding: 20px 0;
-  }
-
-  .card__title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .card__title,
-  .card__price {
-    margin-right: 24px;
-  }
-
-  .button {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .footer__container {
-    flex-direction: column;
-  }
-}
-
-button {
-  cursor: pointer;
-}
 .drinks {
   display: flex;
   border: 4px solid var(--gray-900);
@@ -464,51 +289,123 @@ button {
   display: flex;
   justify-content: space-between;
 }
-
-.drinks__container {
-  display: flex;
-  width: 100%;
-  position: relative;
+/* fotos do catalogo */
+.card:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/feminina1.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/feminina2.jpeg');
+}
+.card:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/femenino4.jpeg');
+  background-position: center;
+}
+.card:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/feminina3.jpeg');
 }
 
-.drinks__items .drinks__details:nth-child(2),
-.drinks__items .drinks__details:nth-child(5),
-.drinks__items .drinks__details:nth-child(8),
-.drinks__price .drinks__details:nth-child(2),
-.drinks__price .drinks__details:nth-child(5),
-.drinks__price .drinks__details:nth-child(8) {
-  margin-top: 24px;
+.card2:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/masculino4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card2:nth-child(2) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/masculino1.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
-.drinks__items .drinks__details:nth-child(2):before,
-.drinks__items .drinks__details:nth-child(5):before,
-.drinks__items .drinks__details:nth-child(8):before {
-  content: '';
+.card2:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/masculino2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card2:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/masculino3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card3:nth-child(2) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card3:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
   background-color: black;
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  margin-top: -12px;
 }
 
-.drinks__items,
-.drinks__price {
+.footer .section__title,
+.footer .section__subtitle {
+  color: white;
+  text-align: left;
+}
+
+.footer .section__title span {
+  color: #67b0b4;
+}
+
+.footer__container {
   display: flex;
-  flex-direction: column;
-}
-
-.drinks__items > p{
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.cart {
-  width: 100%;
-}
-
-.section {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  width: calc(100% - 40px);
+  max-width: 1460px;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 32px 0;
 }
+
+.footer .button--primary {
+  padding: 16px 36px;
+  text-transform: uppercase;
+}
+
+.button {
+  width: fit-content;
+  border: 0;
+}
+
+/*media queries*/ 
+
+@media (max-width: 1279px) {
+  .hero-header img {
+    margin-top: 0;
+  }
+
+  .hero-header__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-header h1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+}
+
+
+
+
+
