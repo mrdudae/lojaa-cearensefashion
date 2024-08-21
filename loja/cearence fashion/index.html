@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cearense Fashion</title>
+  <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__brand">
+      <img class="navbar__logo" src="imagens/logo.png" alt="loja" />
+      <p class="navbar__title">Cearense <span>Fashion</span></p>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="#drinks"><i class='bx bx-cart'></i></a></li>
+      <li><a href="#section__title">catálago</a></li>
+      <li><a href="login.html">Entrar</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-header">
+    <div class="hero-header__container">
+      <div class="hero-header__content">
+       
+      </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div id="section__title">
+      <h2 class="section__title">Catálogo Feminino</h2>
+      <p class="section__subtitle">Nossas roupas, feitas especialmente para você!</p>
+    </div>
+    </div>
+    <div class="drinks" id="drinksID">
+      <div class="drinks__container">
+        <div class="drinks__items">
+          <h2>Resumo da compra</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total:</p>
+        </div>
+        <a href="final.html"><button class="button button--primary card__price " id="finalizar">Deseja finalizar?</button></a>
+      </div>
+    </div>
+    <div class="menu__cards">
+
+      <div class="card">
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Conjunto estamapado + bolsa + cordão ', 100)">R$100,00</button>
+      </div>
+
+      <div class="card">
+      <button class="button button--primary card__price"onclick="adicionarAoCarrinho('blusa + short', 80)">R$80,00</button>
+      </div>
+
+      <div class="card">
+         <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Blusa + Short + Bolsa ', 180)">R$180,00</button>
+      </div>
+      <div class="card">
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Conjunto Estampado ', 99)">R$99,90</button>
+      </div>
+    </div>
+    </div>
+
+    <h2 class="section__title">Catálago Masculino</h2>
+    <div class="menu__cards">
+      <div class="card2">
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Camiseta Oversized Lisa  ', 180)">R$180,00</button>
+    </div>
+
+    <div class="card2">
+
+    <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Short + blusa + blazer', 200)">R$200,00</button>
+      </div>
+    <div class="card2">
+         <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Blusa + short ', 126)">R$126,90</button>
+    </div>
+      <div class="card2">
+
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Conjunto Branco ', 300)">R$300,00</button>
+      </div>
+    </div>
+    </div>
+
+  <h2 class="section__title">Catálago Infantil</h2>
+    <div class="menu__cards">
+      <div class="card3">
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Conjunto infantil gatinho ', 129)">R$129,00</button>
+  </div>
+
+    <div class="card3">
+        <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Blusa + short ', 200)">R$200,00</button>
+    </div>
+  <div class="card3">
+         <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Macacão Roxo ', 112)">R$112,00</button>
+  </div>
+
+      <div class="card3">
+    <button class="button button--primary card__price"onclick="adicionarAoCarrinho('Jardineira + blusa ', 127)">R$127,00</button>
+      </div>
+    </div>
+    </div>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <div>
+        <h2 class="section__title">Compre <span>agora mesmo</span>!</h2>
+        <p class="section__subtitle">entregamos em toda cidade</p>
+      </div>
+
+      <button class="button button--primary">Faça sua compra!</button>
+    </div>
+  </footer>
+  <div class="root"></div>
+  <script type="module" src="carrinho/carrinho.jsx"></script>
+  <script src="js.js"></script>
+</body>
+
+</html>

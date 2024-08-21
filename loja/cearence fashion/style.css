@@ -1,0 +1,514 @@
+  * {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 62.5%;
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  li {
+    list-style: none;
+  }
+  #finalizar {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 22px;
+    height: 60px;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a6e8ec;
+    padding: 20px 36px;
+    font-family: 'Cupid Love', sans-serif;
+    z-index: 1;
+  }
+
+.navbar__title {
+    color: black;
+    font-size: 40px;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 200ms ease-in;
+    font-family:'Arial Narrow';
+  }
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+.navbar__brand img {
+    height: 3rem;
+    width: 3rem;
+  }
+.navbar__title span {
+    color: #67b0b4;
+  }
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+.navbar__links li a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 200ms;
+    font-family:'Arial Narrow';
+  }
+  .navbar__links li a:hover {
+    color:#67b0b4;
+  }
+  .navbar__links li a i {
+    font-size: 30px;
+    color:black;
+  }
+
+  .navbar__links li a i:hover {
+    color: #67b0b4;
+  }
+  .navbar__links li a,
+  .navbar__links .button {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .navbar__links .button {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1080px) {
+    .navbar,
+    .navbar__brand {
+      flex-direction: column;
+    }
+    .navbar__links {
+      gap: 20px;
+    }
+  }
+   @media (min-width: 900px ) {
+    .menu-celular {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .navbar__links {
+      flex-direction: column;
+      display: none;
+    }
+    
+  .navbar__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  .navbar__links li a {
+      font-size: 16px;
+      line-height: 20px;
+      display: none;
+    }
+  }
+.card__title,
+.button,
+.section__title {
+  font-family: 'Cupid Love', sans-serif;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 15px 5%;
+}
+.section__title {
+  color: #67b0b4;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+ 
+}
+.section__subtitle {
+  color: #67b0b4;
+  margin-top: 12px;
+  font-size: 40px;
+  line-height: 48px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 900px));
+  gap: 50px 30px;
+  width: 100%;
+}
+.card {
+  text-transform: uppercase;
+  background: #333;
+  border-radius: 60px;
+  background-size: cover;
+  width: 380px;
+  height: 600px;
+  max-width: 900px;
+  padding: 40px 5%;
+}
+.card2 {
+  text-transform: uppercase;
+  background: #333;
+  border-radius: 60px;
+  background-size: cover;
+  width: 380px;
+  height: 600px;
+  max-width: 900px;
+  padding: 40px 5%;
+}
+.card3 {
+  text-transform: uppercase;
+  background: #333;
+  border-radius: 60px;
+  background-size: cover;
+  width: 380px;
+  height: 600px;
+  max-width: 900px;
+  padding: 40px 5%;
+}
+.card:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr1.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr2.jpeg');
+}
+.card:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr3.jpeg');
+  background-position: center;
+}
+.card:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/mlr4.jpeg');
+}
+
+.card2:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card2:nth-child(2) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card2:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card2:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/macho4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3:nth-child(1) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card3:nth-child(2) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3:nth-child(3) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card3:nth-child(4) {
+  background-image:  linear-gradient(rgba(29, 29, 29, 0.277), rgba(29, 29, 29, 0.144)), url('imagens/baby4.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.card__title {
+  color: #67b0b4;
+  font-size: 45px;
+  line-height: 50px;
+  width: fit-content;
+}
+.card__title,
+.card__price {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.button--primary {
+  color: rgb(255, 255, 255);
+  float: right;
+  margin: 12px, 5px;
+}
+.button--primary {
+  background-color:#67b0b4;
+  font-size: 25px;
+  line-height: 50px;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-family:'Arial Narrow';
+  height: 70px;
+}
+.button--primary:hover {
+  background-color: #317477;
+  transition: all 200ms;
+}
+.cart {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background-color: black;
+}
+
+.footer .section__title,
+.footer .section__subtitle {
+  color: white;
+  text-align: left;
+}
+
+.footer .section__title span {
+  color: #67b0b4;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 40px);
+  max-width: 1460px;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 32px 0;
+}
+
+.footer .button--primary {
+  padding: 16px 36px;
+  text-transform: uppercase;
+}
+
+.button {
+  width: fit-content;
+  border: 0;
+}
+
+.hero-header__container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 30rem;
+  background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(imagens/prainha.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-header__content {
+  padding: 186px 0 186px 100px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 0 0 auto;
+}
+
+/*media queries*/ 
+@media (max-width: 1535px) {
+  .hero-header img {
+    margin-left: 0;
+  }
+
+  .hero-header__content {
+    flex: initial;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hero-header img {
+    margin-top: 0;
+  }
+
+  .hero-header__container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero-header h1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .section__title,
+  .section__subtitle,
+  .card {
+    max-width: 450px;
+  }
+
+  .menu {
+    padding: 20px 24px 48px 24px;
+    gap: 24px;
+  }
+
+  .menu__cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .section__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .section__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card {
+    padding: 20px 0;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__title,
+  .card__price {
+    margin-right: 24px;
+  }
+
+  .button {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+.drinks {
+  display: flex;
+  border: 4px solid var(--gray-900);
+  border-radius: 44px;
+  padding: 44px 64px;
+  width: 45%;
+  max-width: 1200px;
+
+}
+
+#drinksID {
+  display: none;
+  left: 0;
+  justify-content: left;
+}
+
+.drinks h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.drinks li {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.drinks__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--primary);
+}
+
+.drinks__title,
+.drinks__details {
+  text-transform: uppercase;
+}
+
+.drinks__details {
+  font-size: 36px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drinks__container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.drinks__items .drinks__details:nth-child(2),
+.drinks__items .drinks__details:nth-child(5),
+.drinks__items .drinks__details:nth-child(8),
+.drinks__price .drinks__details:nth-child(2),
+.drinks__price .drinks__details:nth-child(5),
+.drinks__price .drinks__details:nth-child(8) {
+  margin-top: 24px;
+}
+
+.drinks__items .drinks__details:nth-child(2):before,
+.drinks__items .drinks__details:nth-child(5):before,
+.drinks__items .drinks__details:nth-child(8):before {
+  content: '';
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  margin-top: -12px;
+}
+
+.drinks__items,
+.drinks__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.drinks__items > p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.cart {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

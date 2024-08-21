@@ -1,0 +1,30 @@
+body{
+    background-color: #a6e8ec;
+    overflow-x: hidden;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15%;
+}
+p{
+    color: rgb(7, 7, 7);
+    font-size: 40px;
+    margin-left: 29%;
+}
+button{
+    width: 200px;
+    height: 85px;
+    font-size: 27px;
+    margin-left: 45%;
+    border-radius: 15px;
+    background-color: #65cacf;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+background-color: #61c4c9;
+}
